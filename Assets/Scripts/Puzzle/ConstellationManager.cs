@@ -106,6 +106,9 @@ public class ConstellationManager : MonoBehaviour
             spawnedStars[i].SetState(activeLevel.initialGridState[i]);
         }
 
+        Random.State prevState = Random.state;
+        Random.InitState(levelIndex + 100);
+
         // Scramble
         List<int> usedIndices = new List<int>();
         int targetMoves = Mathf.Max(1, activeLevel.scrambleMoves);
@@ -119,6 +122,9 @@ public class ConstellationManager : MonoBehaviour
                 usedIndices.Add(rand);
             }
         }
+
+        // Stores the random state for each level
+        Random.state = prevState;
     }
 
     public void OnStarClicked(int index)

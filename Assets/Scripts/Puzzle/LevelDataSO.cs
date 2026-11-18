@@ -8,7 +8,7 @@ public class LevelDataSO : ScriptableObject
     public int cols = 5;
 
     [Header("Difficulty")]
-    public int scrambleMoves = 4; // Number of clicks from solved state
+    public int scrambleMoves; // Number of clicks from solved state
 
     [Header("Grid State")]
     public bool[] initialGridState;
