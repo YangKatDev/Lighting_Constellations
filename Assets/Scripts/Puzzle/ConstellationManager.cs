@@ -14,6 +14,7 @@ public class ConstellationManager : MonoBehaviour
     [Header("Animation & UI")]
     public float secondsPerLineSegment = 0.35f;
     public GameObject nextLevelButton;
+    public TransitionBehaviour transition;
 
     [HideInInspector]
     public bool isLevelComplete = false;
@@ -220,5 +221,11 @@ public class ConstellationManager : MonoBehaviour
         if (nextLevelButton != null) nextLevelButton.SetActive(true);
     }
 
-    public void OnNextLevelButtonClicked() => SetupLevel((currentLevelIndex + 1) % levels.Count);
+    public void OnNextLevelButtonClicked()
+    {
+        transition.PlayFade(() =>
+        {
+            SetupLevel((currentLevelIndex + 1) % levels.Count);
+        });
+    }
 }

@@ -31,9 +31,6 @@ public class StarBehaviour : MonoBehaviour
     {
         isOn = !isOn;
         UpdateVisuals();
-
-        // Tells manager if constellation is solved
-        ConstellationManager.Instance.CheckSolution();
     }
 
     public void SetState(bool state)

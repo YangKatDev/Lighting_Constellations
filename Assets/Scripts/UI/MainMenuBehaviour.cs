@@ -9,6 +9,7 @@ public class MainMenuBehaviour : MonoBehaviour
     public GameObject creditsCanvas;
     public GameObject mainCanvas;
     public GameObject settingsCanvas;
+    public TransitionBehaviour transition;
 
     [Header("Scene Settings")]
     public string gameplaySceneName = "Puzzle_Scene";
@@ -34,12 +35,18 @@ public class MainMenuBehaviour : MonoBehaviour
         PlayerPrefs.SetInt("HasSaveData", 1);
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("Puzzle_Scene");
+        transition.PlayFade(() =>
+        {
+            SceneManager.LoadScene("Puzzle_Scene");
+        });
     }
 
     public void OnContinueClicked()
     {
-        SceneManager.LoadScene("Puzzle_Scene");
+        transition.PlayFade(() =>
+        {
+            SceneManager.LoadScene("Puzzle_Scene");
+        });
     }
 
     public void OnCreditsClicked()
