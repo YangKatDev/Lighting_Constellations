@@ -6,6 +6,7 @@ public class MainMenuBehaviour : MonoBehaviour
 {
     [Header("UI Settings")]
     public Button continueButton;
+    public Button quitButton;
     public GameObject creditsCanvas;
     public GameObject mainCanvas;
     public GameObject settingsCanvas;
@@ -61,10 +62,15 @@ public class MainMenuBehaviour : MonoBehaviour
         settingsCanvas.gameObject.SetActive(true);
     }
 
-    public void OnBackButtonCalicked()
+    public void OnBackButtonClicked()
     {
         mainCanvas.gameObject.SetActive(true);
         creditsCanvas.gameObject.SetActive(false);
         settingsCanvas.gameObject.SetActive(false);
+    }
+
+    public void OnQuitButtonClicked()
+    {
+        Application.Quit();
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45df22213d82fb240a53cbb5a3294d99
+guid: 03a1756f4ba168d4bb927f3974bbbb21
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Continue_Button
+  - name: Quit_Button 1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 64
       height: 16
-    spriteID: 418e21dffac4e5346852e33630840bf2
+    spriteID: 8279eb9ec1a9c154d85faac643fce6c9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 4144647904
+      value0: 3429921261
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Continue_Button
+    name: Quit_Button 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Continue_Button
+    - name: Quit_Button 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 16
-      spriteId: 418e21dffac4e5346852e33630840bf2
+      spriteId: 8279eb9ec1a9c154d85faac643fce6c9
     linkedCells: []
     tileCells: []
     tileSetIndex: 0

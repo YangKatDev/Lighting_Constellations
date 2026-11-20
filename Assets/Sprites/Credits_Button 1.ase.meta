@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ed785d7f0218e4d49976b35074658259
+guid: 7dd49620e31ed904daa6ac3773330c90
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Credits_Button
+  - name: Credits_Button 1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 64
       height: 16
-    spriteID: a4fbc3edab0fbf442ad1fa428b05b09c
+    spriteID: cf16cc28f6f537841bcf48a45a07b01e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3714297171
+      value0: 2884020606
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Credits_Button
+    name: Credits_Button 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Credits_Button
+    - name: Credits_Button 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 16
-      spriteId: a4fbc3edab0fbf442ad1fa428b05b09c
+      spriteId: cf16cc28f6f537841bcf48a45a07b01e
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
