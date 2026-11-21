@@ -20,6 +20,8 @@ public class StarBehaviour : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (PauseMenuManagerBehaviour.isPaused) return;
+
         if (ConstellationManager.Instance.isLevelComplete)
         {
             return;
